@@ -9,11 +9,11 @@ FutureIT Landing Page - A high-end, cyber-luxury landing page for an IT consulta
 
 ## Technology Stack
 
-- **Framework**: React 18.2.0
-- **Build Tool**: Vite 5.0.8
-- **Styling**: Tailwind CSS 3.4.0 + PostCSS + Autoprefixer
-- **Animations**: Framer Motion 10.16.16
-- **Linting**: ESLint with React plugins
+- **Framework**: React 19.2.3
+- **Build Tool**: Vite 7.3.0
+- **Styling**: Tailwind CSS 4.1.18 + PostCSS (CSS-first configuration)
+- **Animations**: Framer Motion 12.23.26
+- **Linting**: ESLint 9.39.2 with React plugins
 - **Language**: JavaScript (ES Modules)
 
 ## Development Commands
@@ -57,16 +57,17 @@ src/
 
 ### Design System
 
-**Color Palette** (defined in tailwind.config.js):
+**Color Palette** (defined in src/index.css @theme block):
 - Base Background: `#0B0D17` (cyber-base)
-- Accent: `#A855F7` (cyber-violet) - used for "IT" in logo
+- Accent: `#A855F7` (cyber-violet)
 - Surface/Cards: `#1A1D2B` (cyber-surface)
-- Primary Text: `#FFFFFF`
-- Secondary Text: `#94A3B8`
+- Footer Background: `#0a071c`
+- Primary Text: `#FFFFFF` (cyber-text-primary)
+- Secondary Text: `#94A3B8` (cyber-text-secondary)
 
 **Typography**:
-- Headings: Orbitron (futuristic)
-- Body: Manrope (modern sans-serif)
+- Headings: Orbitron (futuristic) - font-display
+- Body: Manrope (modern sans-serif) - font-body
 - Loaded from Google Fonts in index.css
 
 **Design Patterns**:
@@ -78,8 +79,9 @@ src/
 ## Key Implementation Details
 
 ### Branding
-- The "IT" in "FutureIT" must always be in cyber-violet color (`text-cyber-violet`)
 - Logo location: `/public/logo.png`
+- Navbar: Logo image only (h-14)
+- Footer: Logo image only, centered, large size (h-32 md:h-40 lg:h-48)
 
 ### Animations
 - All section animations use `whileInView` with `once: true` to trigger on scroll
@@ -103,9 +105,14 @@ src/
 
 ## Configuration Files
 
-- **vite.config.js**: Vite configuration with React plugin
-- **tailwind.config.js**: Custom colors, fonts, and Tailwind setup
-- **postcss.config.js**: PostCSS with Tailwind and Autoprefixer
+- **vite.config.js**: Vite 7 configuration with React plugin
+- **tailwind.config.js**: Legacy config file (still present for reference, but theme defined in CSS)
+- **postcss.config.js**: PostCSS with @tailwindcss/postcss plugin (v4 syntax)
+- **src/index.css**: Tailwind v4 CSS-first configuration using @theme directive
+  - Custom colors defined as CSS variables (--color-*)
+  - Custom fonts (--font-family-*)
+  - Custom animations (--animate-*)
+  - Keyframes for glow, float, and shimmer effects
 - **index.html**: Meta tags, SEO, and Open Graph configured
 
 ## Important Notes
@@ -119,12 +126,22 @@ src/
 ## Customization Points
 
 When modifying this project:
-1. **Colors**: Edit `tailwind.config.js` cyber color palette
+1. **Colors**: Edit `src/index.css` @theme block with CSS variables (--color-*)
 2. **Content**: Each component is self-contained in `src/components/`
 3. **Logo**: Replace `/public/logo.png`
 4. **WhatsApp**: Update number in `FloatingActions.jsx:15`
 5. **Form Backend**: Implement in `ContactForm.jsx` handleSubmit function
-6. **Fonts**: Change in `index.css` (Google Fonts) and `tailwind.config.js`
+6. **Fonts**: Change in `src/index.css` @theme block (--font-family-*) and Google Fonts import
+7. **Animations**: Define in `src/index.css` @theme block (--animate-*) and @keyframes
+
+## Tailwind CSS v4 Migration Notes
+
+This project uses Tailwind CSS v4 with CSS-first configuration:
+- Configuration moved from `tailwind.config.js` to `src/index.css` @theme directive
+- No longer requires autoprefixer (handled automatically)
+- Uses `@tailwindcss/postcss` plugin instead of legacy tailwindcss plugin
+- Custom properties use CSS variable format: `--color-name`, `--font-family-name`, etc.
+- Import syntax: `@import "tailwindcss";` instead of `@tailwind base/components/utilities;`
 
 ## Deployment
 
