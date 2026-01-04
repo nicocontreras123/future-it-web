@@ -4,28 +4,28 @@ import { motion } from 'framer-motion';
 const Technology = () => {
   const techStack = [
     {
-      category: 'Frontend',
-      technologies: ['React', 'Next.js', 'Vue.js', 'Tailwind CSS', 'TypeScript', 'Framer Motion'],
+      category: 'Mobile Seguro',
+      technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Biometría', 'Cifrado E2E'],
     },
     {
-      category: 'Backend',
-      technologies: ['Node.js', 'Python', 'Java', 'Go', 'GraphQL', 'PostgreSQL'],
+      category: 'Cloud Enterprise',
+      technologies: ['AWS', 'Azure', 'Kubernetes', 'Terraform', 'Auto-scaling', '99.9% Uptime'],
     },
     {
-      category: 'Cloud & DevOps',
-      technologies: ['AWS', 'Azure', 'Docker', 'Kubernetes', 'Terraform', 'Jenkins'],
+      category: 'Backend Robusto',
+      technologies: ['Node.js', 'Python', 'Java', 'PostgreSQL', 'Redis', 'API Gateway'],
     },
     {
-      category: 'Mobile',
-      technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Firebase', 'App Store'],
+      category: 'Datos & IA',
+      technologies: ['Machine Learning', 'Analytics', 'Data Pipeline', 'Business Intelligence', 'Python', 'TensorFlow'],
     },
   ];
 
   const process = [
     {
       number: '01',
-      title: 'Análisis',
-      description: 'Evaluamos tus necesidades y definimos la estrategia óptima',
+      title: 'Análisis de Riesgos',
+      description: 'Evaluamos seguridad, escalabilidad y arquitectura con estándares bancarios',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
@@ -34,8 +34,8 @@ const Technology = () => {
     },
     {
       number: '02',
-      title: 'Diseño',
-      description: 'Creamos arquitecturas robustas y experiencias excepcionales',
+      title: 'Arquitectura Enterprise',
+      description: 'Diseñamos sistemas de alta disponibilidad, resilientes y escalables',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
@@ -44,8 +44,8 @@ const Technology = () => {
     },
     {
       number: '03',
-      title: 'Desarrollo',
-      description: 'Implementamos con código limpio y mejores prácticas',
+      title: 'Desarrollo Seguro',
+      description: 'Código con estándares bancarios: OWASP, GDPR, SOC2, PCI-DSS',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -54,8 +54,8 @@ const Technology = () => {
     },
     {
       number: '04',
-      title: 'Testing',
-      description: 'Garantizamos calidad con pruebas exhaustivas',
+      title: 'Testing de Grado Bancario',
+      description: 'Pruebas de seguridad, penetración, carga y estrés exhaustivas',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -64,8 +64,8 @@ const Technology = () => {
     },
     {
       number: '05',
-      title: 'Deploy',
-      description: 'Lanzamos tu proyecto con infraestructura escalable',
+      title: 'Deploy Cloud Seguro',
+      description: 'CI/CD automatizado con monitoreo 24/7 y alta disponibilidad',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -74,8 +74,8 @@ const Technology = () => {
     },
     {
       number: '06',
-      title: 'Soporte',
-      description: 'Te acompañamos con mantenimiento y mejoras continuas',
+      title: 'Soporte Enterprise',
+      description: 'SLA garantizado, parches de seguridad y monitoreo continuo',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -96,10 +96,10 @@ const Technology = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-            Tecnología de <span className="text-cyber-violet">Vanguardia</span>
+            The <span className="text-cyber-violet">Trust Stack</span>
           </h2>
           <p className="text-xl text-cyber-text-secondary max-w-3xl mx-auto">
-            Trabajamos con el stack tecnológico más avanzado para garantizar soluciones de clase mundial
+            Estándares de seguridad financiera, arquitecturas Cloud escalables y metodologías ágiles probadas en entornos de alta exigencia
           </p>
         </motion.div>
 
@@ -147,10 +147,10 @@ const Technology = () => {
           className="text-center mb-12"
         >
           <h3 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            Nuestro <span className="text-cyber-violet">Proceso</span>
+            Metodología <span className="text-cyber-violet">Bancaria</span>
           </h3>
           <p className="text-lg text-cyber-text-secondary max-w-2xl mx-auto">
-            Metodología ágil y probada que garantiza resultados excepcionales en cada proyecto
+            Proceso probado en entornos críticos donde el error no es opción
           </p>
         </motion.div>
 
@@ -204,10 +204,10 @@ const Technology = () => {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { icon: '🔒', text: 'Seguridad Certificada' },
-            { icon: '⚡', text: 'Alta Performance' },
-            { icon: '♾️', text: 'Escalabilidad' },
-            { icon: '✓', text: '100% Garantía' },
+            { icon: '🏦', text: 'Bank-Grade Security' },
+            { icon: '☁️', text: 'Cloud Enterprise' },
+            { icon: '🛡️', text: 'SOC2 Compliant' },
+            { icon: '⚡', text: '99.9% Uptime SLA' },
           ].map((badge, index) => (
             <motion.div
               key={index}

@@ -6,22 +6,12 @@ const Services = () => {
     {
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-        </svg>
-      ),
-      title: 'Desarrollo Web',
-      description: 'Aplicaciones web modernas, escalables y de alto rendimiento con las últimas tecnologías.',
-      features: ['React/Next.js', 'Node.js', 'APIs RESTful', 'Cloud Deploy'],
-    },
-    {
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
-      title: 'Apps Móviles',
-      description: 'Desarrollo nativo e híbrido para iOS y Android con experiencias de usuario excepcionales.',
-      features: ['React Native', 'Flutter', 'iOS/Android', 'UX/UI Design'],
+      title: 'Desarrollo Mobile Seguro',
+      description: 'Apps móviles con seguridad de grado bancario, biometría y cifrado end-to-end. Experiencia probada en fintech.',
+      features: ['Biometría Avanzada', 'Cifrado E2E', 'PCI-DSS Compliant', 'iOS/Android Native'],
     },
     {
       icon: (
@@ -29,9 +19,9 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
         </svg>
       ),
-      title: 'Cloud & DevOps',
-      description: 'Infraestructura en la nube, CI/CD y automatización para operaciones ágiles.',
-      features: ['AWS/Azure', 'Docker', 'Kubernetes', 'CI/CD Pipeline'],
+      title: 'Arquitectura Cloud Enterprise',
+      description: 'Infraestructura de alta disponibilidad con 99.9% uptime garantizado. Auto-scaling, disaster recovery y monitoreo 24/7.',
+      features: ['AWS/Azure Enterprise', 'Kubernetes', '99.9% SLA', 'Auto-scaling'],
     },
     {
       icon: (
@@ -39,9 +29,19 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
       ),
-      title: 'Data Analytics',
-      description: 'Inteligencia de negocio, dashboards interactivos y análisis predictivo.',
-      features: ['Power BI', 'Python/R', 'Machine Learning', 'Big Data'],
+      title: 'Estrategia de Datos & IA',
+      description: 'Transformamos datos en decisiones estratégicas. Machine Learning, pipelines de datos y analytics avanzado para tu negocio.',
+      features: ['Machine Learning', 'Data Pipeline', 'Business Intelligence', 'Analytics Predictivo'],
+    },
+    {
+      icon: (
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        </svg>
+      ),
+      title: 'Desarrollo Web Robusto',
+      description: 'Aplicaciones web de misión crítica con arquitecturas resilientes y testing exhaustivo. Estándares bancarios.',
+      features: ['React/Next.js', 'Node.js Enterprise', 'API Gateway', 'Load Balancing'],
     },
     {
       icon: (
@@ -49,9 +49,9 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
         </svg>
       ),
-      title: 'Ciberseguridad',
-      description: 'Protección avanzada, auditorías de seguridad y cumplimiento normativo.',
-      features: ['Pentesting', 'GDPR/ISO', 'Firewall Config', 'Security Audit'],
+      title: 'Seguridad Bancaria',
+      description: 'Auditorías de seguridad, pentesting y cumplimiento normativo (SOC2, GDPR, PCI-DSS). Protección de nivel financiero.',
+      features: ['Pentesting Avanzado', 'SOC2/GDPR/PCI-DSS', 'Security Audit', 'Threat Detection'],
     },
     {
       icon: (
@@ -59,9 +59,9 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      title: 'Consultoría IT',
-      description: 'Estrategia tecnológica, transformación digital y optimización de procesos.',
-      features: ['Tech Strategy', 'Process Automation', 'Digital Transform', 'IT Advisory'],
+      title: 'Consultoría Enterprise',
+      description: 'Transformación digital con experiencia bancaria. Estrategia tecnológica, modernización de sistemas legacy y optimización.',
+      features: ['Digital Transform', 'Legacy Modernization', 'Tech Strategy', 'Process Optimization'],
     },
   ];
 

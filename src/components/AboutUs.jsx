@@ -4,19 +4,19 @@ import { motion } from 'framer-motion';
 const AboutUs = () => {
   const team = [
     {
-      role: 'Liderazgo',
-      description: 'Equipo directivo con más de 15 años de experiencia en tecnología y transformación digital',
-      stats: '15+ años',
+      role: 'Banca Digital',
+      description: 'Liderazgo de proyectos críticos en Banco Internacional, construyendo aplicaciones financieras de alta disponibilidad',
+      stats: '10+ años',
     },
     {
-      role: 'Desarrollo',
-      description: 'Ingenieros senior especializados en las tecnologías más avanzadas del mercado',
-      stats: '50+ devs',
+      role: 'Innovación',
+      description: 'Experiencia en Apiux Tecnología, desarrollando soluciones enterprise con los más altos estándares de calidad',
+      stats: 'Enterprise',
     },
     {
-      role: 'Diseño',
-      description: 'Diseñadores UX/UI que crean experiencias memorables centradas en el usuario',
-      stats: 'Award-winning',
+      role: 'Seguridad',
+      description: 'Cada línea de código cumple con estándares de seguridad y escalabilidad de nivel empresarial',
+      stats: 'Bank-grade',
     },
   ];
 
@@ -36,8 +36,8 @@ const AboutUs = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       ),
-      title: 'Confiabilidad',
-      description: 'Código de calidad, arquitecturas sólidas y soporte continuo garantizado',
+      title: 'Seguridad Bancaria',
+      description: 'Estándares de seguridad financiera aplicados a cada proyecto, sin excepciones',
     },
     {
       icon: (
@@ -45,8 +45,8 @@ const AboutUs = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      title: 'Agilidad',
-      description: 'Metodologías ágiles que nos permiten adaptarnos rápidamente a tus necesidades',
+      title: 'Robustez',
+      description: 'Arquitecturas probadas en entornos críticos de alta disponibilidad y exigencia',
     },
     {
       icon: (
@@ -71,10 +71,10 @@ const AboutUs = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-            Sobre <span className="text-cyber-violet">Nosotros</span>
+            Nuestra <span className="text-cyber-violet">Herencia</span>
           </h2>
           <p className="text-xl text-cyber-text-secondary max-w-3xl mx-auto">
-            Somos un equipo de expertos apasionados por la tecnología y comprometidos con tu éxito
+            No somos una startup experimental. Somos expertos que construyeron la banca digital en Chile
           </p>
         </motion.div>
 
@@ -93,16 +93,21 @@ const AboutUs = () => {
             <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-3xl md:text-4xl font-display font-bold mb-6">
-                  Construyendo el futuro digital desde 2018
+                  Del corazón de la <span className="text-cyber-violet">banca digital</span>
                 </h3>
                 <p className="text-cyber-text-secondary text-lg leading-relaxed mb-4">
-                  En <span className="text-cyber-text-primary font-semibold">Future<span className="text-cyber-violet">IT</span></span>,
-                  combinamos experiencia técnica con visión estratégica para transformar desafíos complejos en
-                  soluciones elegantes y escalables.
+                  Nuestros fundadores han liderado proyectos críticos en <span className="text-cyber-text-primary font-semibold">Banco Internacional</span> y
+                  <span className="text-cyber-text-primary font-semibold"> Apiux Tecnología</span>, desarrollando aplicaciones
+                  financieras robustas, estrategias de datos e innovación bancaria.
+                </p>
+                <p className="text-cyber-text-secondary text-lg leading-relaxed mb-4">
+                  Aplicamos el <span className="text-cyber-text-primary font-semibold">rigor, la seguridad y la robustez bancaria</span> a
+                  empresas de todos los tamaños. Cada línea de código en Future<span className="text-cyber-violet">IT</span> cumple
+                  con estándares de seguridad y escalabilidad de nivel empresarial.
                 </p>
                 <p className="text-cyber-text-secondary text-lg leading-relaxed">
-                  Nuestra misión es ser el socio tecnológico que tu empresa necesita para alcanzar sus objetivos,
-                  con un enfoque en innovación continua, calidad excepcional y resultados medibles.
+                  No experimentamos con tu negocio. Traemos <span className="text-cyber-violet font-semibold">experiencia probada</span> en
+                  entornos de alta exigencia donde el error no es opción.
                 </p>
               </div>
 

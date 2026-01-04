@@ -89,7 +89,7 @@ const Hero = () => {
           className="inline-flex items-center space-x-2 px-4 py-2 bg-cyber-surface/50 backdrop-blur-sm border border-cyber-violet/20 rounded-full mb-8"
         >
           <span className="w-2 h-2 bg-cyber-violet rounded-full animate-pulse"></span>
-          <span className="text-cyber-text-secondary text-sm font-medium">Innovación + Confiabilidad</span>
+          <span className="text-cyber-text-secondary text-sm font-medium">Seguridad de Grado Bancario</span>
         </motion.div>
 
         {/* Main Heading */}
@@ -99,10 +99,10 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight mb-6"
         >
-          Transformamos Ideas en
+          Innovación Digital
           <br />
-          <span className="text-cyber-violet bg-clip-text text-transparent bg-gradient-to-r from-cyber-violet to-purple-400">
-            Soluciones Digitales
+          con <span className="text-cyber-violet bg-clip-text text-transparent bg-gradient-to-r from-cyber-violet to-purple-400">
+            ADN Bancario
           </span>
         </motion.h1>
 
@@ -113,8 +113,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-2xl text-cyber-text-secondary max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          En <span className="text-cyber-text-primary font-semibold">Future<span className="text-cyber-violet">IT</span></span>,
-          desarrollamos tecnología de vanguardia con la confiabilidad que tu empresa necesita
+          Llevamos la robustez de la banca a tu próxima innovación digital.
+          Creamos productos <span className="text-cyber-text-primary font-semibold">100% confiables</span> con los estándares
+          de seguridad y escalabilidad de instituciones financieras líderes
         </motion.p>
 
         {/* CTA Buttons */}
@@ -148,9 +149,9 @@ const Hero = () => {
           className="grid grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto"
         >
           {[
-            { number: '50+', label: 'Proyectos Exitosos' },
-            { number: '100%', label: 'Satisfacción' },
-            { number: '24/7', label: 'Soporte' },
+            { number: '10+', label: 'Años en Banca Digital' },
+            { number: '99.9%', label: 'Uptime Garantizado' },
+            { number: 'Enterprise', label: 'Grade Security' },
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl md:text-4xl font-display font-bold text-cyber-violet mb-2">
